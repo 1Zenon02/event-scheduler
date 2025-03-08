@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-token-auth/', drf_views.obtain_auth_token),
     path('events/', include('events.urls')),
+    path('users/', include('users.urls')),
 ]
